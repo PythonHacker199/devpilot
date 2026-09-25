@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "project": "devpilot",
+  "workflow": {
+    "plan_before_execute": true,
+    "require_tests": true,
+    "lint_on_complete": true,
+    "commit_per_phase": true,
+    "parallel_subagents": true
+  },
+  "model_profile": {
+    "plan": "default",
+    "execute": "default",
+    "explore": "explore"
+  },
+  "conventions": {
+    "language": "python",
+    "min_python": "3.11",
+    "linter": "ruff",
+    "test_runner": "pytest",
+    "test_flag": "-q",
+    "install_cmd": "pip install -e '.[dev]'"
+  }
+}
