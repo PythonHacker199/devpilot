@@ -1,0 +1,10 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install
+        run: pip install -e .[dev]
+      - name: Test
+        run: exit 1

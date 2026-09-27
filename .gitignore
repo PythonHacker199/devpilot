@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# DevPilot output and fetched sample repo
+.devpilot/
+data/sample_repo/
+
+# Secrets
+.env
+*.pem
+
+# Claude Code local worktrees
+.claude/worktrees/
