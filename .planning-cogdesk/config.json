@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "project": "cognitive-desktop-workspace",
+  "workflow": {
+    "plan_before_execute": true,
+    "require_tests": true,
+    "lint_on_complete": true,
+    "commit_per_phase": true,
+    "parallel_subagents": true
+  },
+  "model_profile": {
+    "plan": "default",
+    "execute": "default",
+    "explore": "explore"
+  },
+  "conventions": {
+    "languages": ["rust", "typescript", "python"],
+    "rust_edition": "2021",
+    "node_package_manager": "pnpm",
+    "python_min": "3.11",
+    "test_runner_rust": "cargo test",
+    "test_runner_ts": "vitest",
+    "test_runner_python": "pytest",
+    "linter_rust": "cargo clippy",
+    "linter_ts": "eslint",
+    "linter_python": "ruff",
+    "formatter_ts": "prettier"
+  },
+  "platform": {
+    "target_os": "windows",
+    "min_os": "Windows 10 1803",
+    "arch": "x86_64",
+    "framework": "tauri-v2"
+  }
+}
